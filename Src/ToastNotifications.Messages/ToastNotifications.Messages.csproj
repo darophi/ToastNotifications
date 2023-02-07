@@ -13,12 +13,7 @@
 		<SignAssembly>true</SignAssembly>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 	</PropertyGroup>
-	<PropertyGroup Condition="('$(Configuration)' == 'Release') And ('$(UseTemporarySignCert)' != 'true')">
-		<AssemblyOriginatorKeyFile>../../Build/DevCrew.ToastNotifications.pfx</AssemblyOriginatorKeyFile>
-	</PropertyGroup>
-	<PropertyGroup Condition="('$(Configuration)' == 'Debug') Or ('$(UseTemporarySignCert)' == 'true')">
-		<AssemblyOriginatorKeyFile>../../Build/DevCrew.ToastNotifications_TemporaryKey.snk</AssemblyOriginatorKeyFile>
-	</PropertyGroup>
+
 	<ItemGroup>
 		<Resource Include="toast-notifications-icon.ico" />
 	</ItemGroup>
